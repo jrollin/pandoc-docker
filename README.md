@@ -2,7 +2,7 @@
 
 [Docker](https://www.docker.io/) container for using [pandoc](https://pandoc.org/) to transform your docs
 
-Display pandoc help :
+Display pandoc version :
 
 ```bash
 docker run jrollin/pandoc-docker

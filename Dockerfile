@@ -20,10 +20,10 @@ RUN apt-get update -y \
 
 
 # install pandoc
-RUN cabal update && cabal install pandoc-${PANDOC_VERSION}
+RUN cabal new-update && cabal new-install pandoc-${PANDOC_VERSION}
 
 WORKDIR /source
 
 ENTRYPOINT ["/root/.cabal/bin/pandoc"]
 
-CMD ["--help"]
+CMD ["--version"]
